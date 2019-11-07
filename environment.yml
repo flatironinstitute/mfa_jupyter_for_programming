@@ -8,6 +8,7 @@ dependencies:
   - pycrypto
   - pip
   - matplotlib
+  - requests
   - pip:
     - git+https://github.com/AaronWatters/jp_doodle#egg=jp_doodle
   
