@@ -73,10 +73,81 @@ def triangle_subproblems():
 
 def abstract_quad():
     s = swatch(model_height=34, pixels=200)
-    for (p, align, txt) in [(p2, "right", "(x1,y1)"), (p3, "left", "(x2,y2)")]:
+    x1 = p2[0]
+    x2 = p3[0]
+    detail = [
+        (p2, "right", "(x1,y1)"), 
+        (p3, "left", "(x2,y2)"),
+        ((x1, 0), "right", "(x1, 0)"), 
+        ((x2, 0), "left", "(x2, 0)")
+        ]
+    for (p, align, txt) in detail:
         (x,y) = p
         s.text(x,y, txt, align=align)
     quad(s, p2, p3, color="rgba(100, 255, 100, 1)")
     s.fit()
-    s.lower_left_axes(min_x=0, max_x=22, min_y=0, max_tick_count=2)
+    #s.lower_left_axes(min_x=0, max_x=22, min_y=0, max_tick_count=2)
+    final_fit(s)
+
+[R, G, B] = [0, 0, 0]
+
+def random_color(alpha=1):
+    global R, G, B
+    R = (R + 111) % 255
+    B = (B + 59) % 255
+    G = (G + 201) % 255
+    return "rgba(%s, %s, %s, %s)" % (R, G, B, alpha)
+
+points = [
+    (0,6),
+    (3,0),
+    (10,2),
+    (12,9),
+    (9,12),
+    (6,17)
+]
+
+
+def polygon(points=points):
+    s = swatch(model_height=34, pixels=200)
+    #coords = [p1, p2, p3]
+    s.polygon(points, color="#999")
+    last = points[-1]
+    for p in points:
+        (x,y) = p
+        s.text(x,y, repr(p), color="#f33")
+    s.fit()
+    s.lower_left_axes(min_x=0, min_y=0, max_tick_count=2)
+    final_fit(s)
+
+def polygon_subproblems(points=points, alpha=0.3):
+    s = swatch(model_height=34, pixels=200)
+    #coords = [p1, p2, p3]
+    s.polygon(points, color="#999")
+    last = points[-1]
+    for point in points:
+        quad(s, last, point, color=random_color(alpha))
+        last = point
+    for p in points:
+        (x,y) = p
+        s.text(x,y, repr(p), color="green")
+    s.fit()
+    s.lower_left_axes(min_x=0, min_y=0, max_tick_count=2)
+    final_fit(s)
+
+import math
+
+def right_triangle():
+    s = swatch(model_height=64, pixels=200)
+    coords = [(0,0), (30,0), (30,40)]
+    s.polygon(coords, color="#999", fill=False, lineWidth=2)
+    s.frame_circle(0, 0, 10, color="blue", start=5.6, arc=6.1, fill=False)
+    s.text(15, -3, "base", color="green", align="center")
+    d = 20
+    theta = d * math.pi / 180.0
+    sn = math.sin(theta)
+    cs = math.cos(theta)
+    r = 11
+    s.text(r*cs, r*sn, "angle_degrees", degrees=d, color="green")
+    #s.fit()
     final_fit(s)
