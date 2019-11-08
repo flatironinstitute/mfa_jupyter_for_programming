@@ -6,19 +6,36 @@ Support material for an introduction to using Jupyter to teach computer programm
 
 This repository contains Jupyter notebooks and other material
 intended to help teach "how to use Jupyter for teaching programming".
+The intended audience for the course are the "master teachers" participating
+in the Simons Foundation Teach for America program.
 
-For sharing information with the class
+[Note: For sharing temporary information with the class
 <a href="https://cl1p.net/">cl1p.net</a> provides a useful temporary
-clipboard service.
+clipboard service.]
 
 # Course Goals
 
-- To walk through some example notebooks which teach programming concepts by demonstrating them in action.
-- To explain advantages, disadvantages, and technical characteristics of the Jupyter infrastructure which relate to educational uses.
-- To discuss different ways of deploying Jupyter and Jupyter notebooks.
+This course will show by example how to use Jupyter to teach basic
+concepts of Python programming.  The course 
+
+- walks through some example notebooks which teach programming concepts by demonstrating them in action.
+- discusses advantages, disadvantages, and technical characteristics of the Jupyter infrastructure which relate to educational uses.
+- discusses different ways of deploying Jupyter and Jupyter notebooks.
 
 The material assumes the student is familiar with some sort of traditional programming
 language (Basic, Python, C, Javascript, or similar).
+
+# Resources
+
+<a href="https://www.cs.put.poznan.pl/csobaniec/software/python/py-qrc.html">
+A Python quick reference card.</a>
+
+<a href="https://www.python.org/">The Python organization web site with
+links to tutorials and other documentation</a>
+
+<a hfef="https://jupyter.org/try">Links to run some Jupyter notebooks
+containing introductory material provided by the official Jupyter project
+web site</a>
 
 # Suggested software
 
@@ -30,6 +47,13 @@ you should either
 - Run using Binder "in the cloud".  For best results you will need to authenticate 
 as a Google user to use our Binder.  You can also use the public Binder,
 but you may have performance problems (linked above in the binder image).
+
+- Either way please verify that everything is working in your environment by navigating
+to the validation notebook `notebooks/validation test.ipynb` and executing each
+of the cells of the notebook.
+
+NOTE: The hardest thing about Jupyter is that you must use "Shift-enter" to execute
+a cell!
 
 # Installing locally
 
