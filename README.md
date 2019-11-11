@@ -1,6 +1,6 @@
 # mfa_jupyter_for_programming
 
-Support material for an introduction to using Jupyter to teach computer programming.
+## Support material for an introduction to using Jupyter to teach computer programming.
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/flatironinstitute/mfa_jupyter_for_programming/master)
 
@@ -9,9 +9,8 @@ intended to help teach "how to use Jupyter for teaching programming".
 The intended audience for the course are the "master teachers" participating
 in the Simons Foundation Teach for America program.
 
-[Note: For sharing temporary information with the class
-<a href="https://cl1p.net/">cl1p.net</a> provides a useful temporary
-clipboard service.]
+From the <a href="https://jupyter.org">Jupyter.org web site:</a>
+"The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more."  ... and they forgot to mention it's a great tool for teaching programming.
 
 # Course Goals
 
@@ -36,6 +35,10 @@ links to tutorials and other documentation</a>
 <a href="https://jupyter.org/try">Links to run some Jupyter notebooks
 containing introductory material provided by the official Jupyter project
 web site</a>
+
+[Note: For sharing temporary information with the class
+<a href="https://cl1p.net/">cl1p.net</a> provides a useful temporary
+clipboard service.]
 
 # Suggested software
 
