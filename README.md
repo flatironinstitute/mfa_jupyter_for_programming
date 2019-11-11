@@ -33,7 +33,7 @@ A Python quick reference card.</a>
 <a href="https://www.python.org/">The Python organization web site with
 links to tutorials and other documentation</a>
 
-<a hfef="https://jupyter.org/try">Links to run some Jupyter notebooks
+<a href="https://jupyter.org/try">Links to run some Jupyter notebooks
 containing introductory material provided by the official Jupyter project
 web site</a>
 
