@@ -40,6 +40,9 @@ Note: For sharing temporary information with the class
 <a href="https://cl1p.net/">cl1p.net</a> provides a useful temporary
 clipboard service.
 
+<a href="https://jupyter4edu.github.io/jupyter-edu-book/">The
+Handbook for Teaching and Learning with Jupyter.</a>
+
 # Suggested software
 
 In order to actively run the material in the notebooks discussed in the course
