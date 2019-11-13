@@ -7,7 +7,7 @@
 This repository contains Jupyter notebooks and other material
 intended to help teach "how to use Jupyter for teaching programming".
 The intended audience for the course are the "master teachers" participating
-in the Simons Foundation Teach for America program.
+in the Simons Foundation Math for America program.
 
 From the <a href="https://jupyter.org">Jupyter.org web site:</a>
 "The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more."  ... and they forgot to mention it's a great tool for teaching programming.
