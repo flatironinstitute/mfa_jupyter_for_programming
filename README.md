@@ -36,9 +36,9 @@ links to tutorials and other documentation</a>
 containing introductory material provided by the official Jupyter project
 web site</a>
 
-[Note: For sharing temporary information with the class
+Note: For sharing temporary information with the class
 <a href="https://cl1p.net/">cl1p.net</a> provides a useful temporary
-clipboard service.]
+clipboard service.
 
 # Suggested software
 
